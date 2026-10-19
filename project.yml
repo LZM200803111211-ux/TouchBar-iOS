@@ -1,6 +1,8 @@
 name: TouchBar
 options:
   bundleIdPrefix: top.papercloud
+  xcodeVersion: "15.0"          # 关键：让 XcodeGen 输出 Xcode15 能读的工程格式
+  objectVersion: "56"
   deploymentTarget:
     iOS: "14.0"
   createIntermediateGroups: true
