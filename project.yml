@@ -1,0 +1,25 @@
+name: TouchBar
+options:
+  bundleIdPrefix: top.papercloud
+  deploymentTarget:
+    iOS: "14.0"
+  createIntermediateGroups: true
+
+targets:
+  TouchBar:
+    type: application
+    platform: iOS
+    sources:
+      - path: TouchBar
+    info:
+      path: TouchBar/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: top.papercloud.touchbar
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        ENABLE_BITCODE: NO
